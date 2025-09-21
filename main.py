@@ -1,11 +1,11 @@
 import time
 import network
 
-SSID = "J.H iPhone"       # <-- change to your WiFi SSID
-PASSWORD = "nasaastrojan"  # <-- change to your WiFi password
+SSID = "J.H iPhone"       # Choose Wi-Fi SSID / name
+PASSWORD = "nasaastrojan"  # Type in password of the selected Wi-Fi
 
 def connect_to_wifi():
-    # Reset and initialize WLAN in STA mode
+    # Reset and initialize WLAN in STA (station mode), to act as a Wi-Fi client
     wlan = network.WLAN(mode=network.WLAN.STA)
     wlan.deinit()
     wlan.init(mode=network.WLAN.STA)
