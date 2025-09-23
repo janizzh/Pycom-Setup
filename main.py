@@ -1,8 +1,8 @@
 import time
 import network
 
-SSID = "J.H iPhone"       # Choose Wi-Fi SSID / name
-PASSWORD = "nasaastrojan"  # Type in password of the selected Wi-Fi
+SSID = "Pycom"       # Choose Wi-Fi SSID / name
+PASSWORD = "12345678"  # Type in password of the selected Wi-Fi
 
 def connect_to_wifi():
     # Reset and initialize WLAN in STA (station mode), to act as a Wi-Fi client
