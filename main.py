@@ -11,7 +11,7 @@ def connect_to_wifi():
     wlan.init(mode=network.WLAN.STA)
 
     print("Scanning for networks...")
-    nets = wlan.scan()
+    nets = wlan.scan(type=wlan.SCAN_ACTIVE)
     found = False
     for net in nets:
         print("Found:", net.ssid)
